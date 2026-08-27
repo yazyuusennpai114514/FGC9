@@ -7,14 +7,16 @@
 </head>
 <body>
   <script>
-    let count = 0;
-document.addEventListener('click', () => {
-  if (count % 2 === 0) {
-    document.documentElement.requestFullscreen?.()
-      ?? document.documentElement.webkitRequestFullscreen?.();
+for (let n = 0; n < 1919; n++) {
+  if (n % 2 === 0) {
+    document.addEventListener('click', () => {
+      document.documentElement.requestFullscreen?.()
+        ?? document.documentElement.webkitRequestFullscreen?.();
+    }, { once: true });
   } else {
-    alert("unnko");
+    document.addEventListener('click', () => {
+      alert("unnko");
+    }, { once: true });
   }
-  count++;
-});
+}
   </script>
