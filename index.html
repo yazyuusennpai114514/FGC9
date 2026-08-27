@@ -1,1 +1,20 @@
 
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>SEX</title>
+</head>
+<body>
+  <script>
+    let count = 0;
+document.addEventListener('click', () => {
+  if (count % 2 === 0) {
+    document.documentElement.requestFullscreen?.()
+      ?? document.documentElement.webkitRequestFullscreen?.();
+  } else {
+    alert("unnko");
+  }
+  count++;
+});
+  </script>
